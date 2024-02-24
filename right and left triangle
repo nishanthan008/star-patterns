@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //right and left triangle
+    int n=5,sp;
+    sp=2*(n-1);
+    for(int i=0;i<n;i++)
+    {
+        //star
+        for(int ii=0;ii<=i;ii++)
+        {
+            cout<<"*";
+        }
+        //space
+        for(int j=0;j<sp;j++)
+        {
+            cout<<" ";
+        }
+        //star
+        for(int k=i;k>=0;k--)
+        {
+            cout<<"*";
+        }
+        sp=sp-2;
+        cout<<endl;
+    }
+    
+    return 0;
+}
