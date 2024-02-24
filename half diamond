@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //inverse triangle
+    int n1=5,n;
+    n=n1*2-1;
+    for(int i=0;i<=n;i++)
+    {
+        //star
+        int st=i;
+        if(n1<i)
+        {
+            st=2*n1-i;
+        }
+        for(int k=0;k<st;k++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}
